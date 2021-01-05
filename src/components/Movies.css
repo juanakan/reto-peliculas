@@ -1,0 +1,5 @@
+.movies{
+    background-color: rgb(46, 22, 56);
+    display: grid;
+    grid-template: repeat(5,1fr) / repeat(4,1fr);
+}
