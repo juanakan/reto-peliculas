@@ -48,8 +48,8 @@ const Movie = ({movie}) => {
                         <p><b>Overview: </b><br/>{movie.overview}</p>
                     </div>
                 </div>
-                <div className="botonCerrar">
-                <button className="cerrar" onClick={abrirCerrarModal}>Cerrar</button>
+                <div className="containerButton">
+                    <button className="cerrar" onClick={abrirCerrarModal}>Cerrar</button>
                 </div>
             </div>
         </Modal>

@@ -6,6 +6,7 @@ form{
     height: 7em;
 
 }
+
 input{
     font-size: 1em;
     width: 15em;
@@ -14,6 +15,7 @@ input{
     border-radius: 0.4em;
     border: none;
 }
+
 input::placeholder{
     font-size: 1em;
     color: rgb(173, 173, 173);
@@ -33,6 +35,7 @@ button{
     border: none;
 
 }
+
 button:hover{
     background-color:rgb(191, 102, 226);
 }

@@ -8,7 +8,6 @@
     justify-content: space-between;
     cursor: pointer;
     opacity: 70%;
-
 }
 
 .movie:hover{
@@ -22,16 +21,19 @@ img{
 span{
     color: white;
 }
+
 .titulo{
     font-size: x-large;
     text-align: center;
     margin: 0.5em;
 }
+
 .titulo-original{
     font-size: large;
     text-align: center;
     margin: 0.5em;
 }
+
 .valoracion,.overview{
     background-color: rgb(104, 9, 133);
     padding: 0.5em;
@@ -44,28 +46,26 @@ span{
     display: grid;
     grid-template-rows: 8fr 1fr;
     position: absolute;
-    background-color: white;
+    background-color: rgb(168, 124, 204);
     border: 1em, solid;
+    border-radius: 0.5em;
     padding: 2em;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     justify-content: space-between;
-
 }
 
 .datos{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 1em;
-
 }
 
 .imagenPortada{
     display: flex;
     height: 80%;
     width: 100%;
-
 }
 
 .datosPelicula{
@@ -76,20 +76,24 @@ span{
     align-content: center;
 }
 
-.cerrar{
-    width: 20%;
-    background-color: rgb(133, 22, 22);
-}
-.cerrar:hover{
-    background-color: rgb(177, 56, 56);
-}
-
-.puntuacion, .numeroVotos{
-    text-align: center;
-}
-.botonCerrar{
+.containerButton{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     
 }
+
+.cerrar{
+    width: 20%;
+    background-color: rgb(74, 6, 95);
+}
+
+.cerrar:hover{
+    background-color: rgb(108, 9, 138);
+
+}
+
+.puntuacion, .numeroVotos{
+    text-align: center;
+}
+
