@@ -5,30 +5,31 @@ import './SearchForm.css';
 class SearchForms extends React.Component {
     constructor(props){
         super(props);
-        this.state={search:"",
-                    valor:""}
+        this.state={searchInput:"",
+                    search:""}
     }
 
+    // metemos el valor del input
     handleChange=(e)=>{
-        this.setState({search:e.target.value})
+        this.setState({searchInput:e.target.value})
                                                                                            
     }
     
-    handleSubmit=(e)=>{
+    //metodo para el buscador de peliculas en el que si el input no esta vacio lo metemos en la variable search
+    // luego searchInput lo dejamos vacio para que no de error
+    handleSubmitSearch=(e)=>{
         e.preventDefault();
-        if(this.state.search!==""&& this.state.search!==undefined){
-            this.setState({valor:`https://api.themoviedb.org/3/search/movie?api_key=1e6296feeb7565b54f1f8ea079f7e70e&language=es&query=${this.state.search}`});
+        if(this.state.searchInput!==""&& this.state.searchInput!==undefined){
+            this.setState({search:`https://api.themoviedb.org/3/search/movie?api_key=1e6296feeb7565b54f1f8ea079f7e70e&language=es&query=${this.state.searchInput}`});
         }
-        this.setState({search:""});
-        
-
-
+        this.setState({searchInput:""});
     }
+
+    // hacemos lo mismo con las peliculas populares
     handleSubmitPopular=(e)=>{
         e.preventDefault();
-        this.setState({valor:`https://api.themoviedb.org/3/movie/popular?api_key=1e6296feeb7565b54f1f8ea079f7e70e&language=es`});
-        this.setState({search:""});
-
+        this.setState({search:`https://api.themoviedb.org/3/movie/popular?api_key=1e6296feeb7565b54f1f8ea079f7e70e&language=es`});
+        this.setState({searchInput:""});
     }
 
     render(){
@@ -36,19 +37,17 @@ class SearchForms extends React.Component {
             <h1 className="miNombre">Practica Juan Antonio Roldan</h1>
             <form>
                 <div>
-                    <input type="text" value ={this.state.search} onChange={this.handleChange} placeholder="Titulo pelicula"></input>
-                    <button className="botonbuscar" type="submit" value="Buscar" onClick={this.handleSubmit}>Buscar</button>
+                    <input type="text" value ={this.state.searchInput} onChange={this.handleChange} placeholder="Titulo pelicula"></input>
+                    <button className="botonbuscar" type="submit" value="Buscar" onClick={this.handleSubmitSearch}>Buscar</button>
                 </div>
                 <div>
                     <button className="botonPopular" onClick={this.handleSubmitPopular}>Peliculas populares</button>
                 </div>
-
             </form>
-            <Movies search={this.state.valor}/>
+                <Movies search={this.state.search}/>
             </div>
         )
         }
-
 }
 
 export default SearchForms;

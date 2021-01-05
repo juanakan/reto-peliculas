@@ -78,7 +78,10 @@ span{
 
 .cerrar{
     width: 20%;
-    background-color: yellowgreen;
+    background-color: rgb(133, 22, 22);
+}
+.cerrar:hover{
+    background-color: rgb(177, 56, 56);
 }
 
 .puntuacion, .numeroVotos{
