@@ -40,7 +40,7 @@ class SearchForms extends React.Component {
                     <button className="botonbuscar" type="submit" value="Buscar" onClick={this.handleSubmit}>Buscar</button>
                 </div>
                 <div>
-                    <button className="botonPopular" onClick={this.handleSubmitPopular}>Peliculas populares</button>
+                    <button className="botonPopular" onClick={this.handleSubmitPopular}>10 Peliculas populares</button>
                 </div>
 
             </form>
