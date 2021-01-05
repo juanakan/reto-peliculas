@@ -18,4 +18,4 @@ Para esta página hemos usado React para crear todos los componentes de la aplic
 
 ## Pagina Web<a name="id4"></a>
 Para crear la web he usado Heroku, ya que no lo conseguia con GitHub-pages y podremos comprobar el funcionamiento de la página.  
-[Enlace Pagina Web Trello](https://reto-peliculas.herokuapp.com/)
+[Enlace Pagina Web Api Peliculas](https://reto-peliculas.herokuapp.com/)
