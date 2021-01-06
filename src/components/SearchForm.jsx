@@ -34,6 +34,7 @@ class SearchForms extends React.Component {
 
     render(){
         return(<div>
+            <header>
             <h1 className="miNombre">Practica Juan Antonio Roldan</h1>
             <form>
                 <div>
@@ -44,6 +45,7 @@ class SearchForms extends React.Component {
                     <button className="botonPopular" onClick={this.handleSubmitPopular}>Peliculas populares</button>
                 </div>
             </form>
+                </header>
                 <Movies search={this.state.search}/>
             </div>
         )

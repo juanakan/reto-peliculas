@@ -1,17 +1,17 @@
 .movie{
-    background-color: indigo;
+    background-color: #321f28;
     display: flex;
     flex-direction: column;
-    margin: 0.8em;
+    margin: 0.3em;
     border-radius: 0.5em;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    opacity: 70%;
+
 }
 
 .movie:hover{
-    opacity: 100%;
+    opacity: 70%;
 }
 
 img{
@@ -35,10 +35,8 @@ span{
 }
 
 .valoracion,.overview{
-    background-color: rgb(104, 9, 133);
     padding: 0.5em;
     margin: 0.5em;
-    border-radius: 0.5em;
     font-size: 0.8em;
 }
 
@@ -46,7 +44,7 @@ span{
     display: grid;
     grid-template-rows: 8fr 1fr;
     position: absolute;
-    background-color: rgb(168, 124, 204);
+    background-color: #839b97;
     border: 1em, solid;
     border-radius: 0.5em;
     padding: 2em;
@@ -85,11 +83,12 @@ span{
 
 .cerrar{
     width: 20%;
-    background-color: rgb(74, 6, 95);
+    background-color:#321f28;
 }
 
 .cerrar:hover{
-    background-color: rgb(108, 9, 138);
+    background-color:#321f28;
+    opacity: 60%;
 
 }
 

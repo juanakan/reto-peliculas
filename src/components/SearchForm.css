@@ -1,3 +1,13 @@
+header{
+    background-color:  #34626c;
+    padding: 1em;
+}
+
+.miNombre{
+    text-align: center;
+    color: white;
+}
+
 form{
     display: flex;
     justify-content: space-evenly;
@@ -25,11 +35,11 @@ input::placeholder{
 
 button{
     cursor: pointer;
-    background-color:rgb(133, 61, 161);
+    background-color:#321f28;
     color: white;
     font-size: 1em;
     width: 5em;
-    height: 2.5em;
+    height: 3em;
     border-radius: 00.4em;
     border: solid;
     border: none;
@@ -37,14 +47,9 @@ button{
 }
 
 button:hover{
-    background-color:rgb(191, 102, 226);
+    background-color:#5a444e;
 }
 
 .botonPopular{
     width: 8em;
-}
-
-.miNombre{
-    text-align: center;
-    color: white;
 }
